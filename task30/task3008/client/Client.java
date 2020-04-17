@@ -120,6 +120,7 @@ public class Client {
                 else {
                     if (message.getType() == MessageType.NAME_ACCEPTED) {
                         notifyConnectionStatusChanged(true);
+                        clientConnected = true;
                     }
                     else {
                         throw new IOException("Unexpected MessageType");
